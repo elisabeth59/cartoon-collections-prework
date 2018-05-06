@@ -12,8 +12,8 @@ def long_planeteer_calls(planeteer_calls)
   planeteer_calls.any? { |call| call.length > 4 }
 end
 
-def find_the_cheese(potentially_cheese_items)
-  potentially_cheese_items.find do |maybe_cheese|
-    cheese.include?(maybe_cheese)
-  end
+def find_the_cheese(strings)
+  cheese_types.find do |food|
+   strings.include?(food)
+   end
 end
